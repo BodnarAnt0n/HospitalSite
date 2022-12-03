@@ -6,7 +6,6 @@ load_dotenv(find_dotenv())
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY")
 
 DEBUG = True
@@ -20,6 +19,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'employee.apps.EmployeeConfig'
 ]
 
 MIDDLEWARE = [

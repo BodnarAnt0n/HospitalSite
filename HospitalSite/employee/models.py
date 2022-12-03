@@ -107,7 +107,7 @@ class EmployeeAchievement(models.Model):
 
     employee = models.ForeignKey(
         Employee, on_delete=models.RESTRICT,
-        related_name='work', related_query_name='work',
+        related_name='achievement', related_query_name='achievement',
     )
     description = models.CharField(verbose_name='Описание достижения', max_length=500)
     is_true = models.BooleanField(verbose_name='Флаг подтверждения', default=False)
