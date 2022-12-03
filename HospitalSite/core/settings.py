@@ -1,14 +1,17 @@
+import os
 from pathlib import Path
+from dotenv import load_dotenv, find_dotenv
+
+load_dotenv(find_dotenv())
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-SECRET_KEY = 'django-insecure-=lkp%jev=+)iy!alin(&%k+&5t$xn6mn#2_w(27d$m)yrbkiwz'
+SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY")
 
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -74,7 +77,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'ru-ru'
 
-TIME_ZONE = 'UTC+3'
+TIME_ZONE = 'Etc/GMT+3'
 
 USE_I18N = True
 
