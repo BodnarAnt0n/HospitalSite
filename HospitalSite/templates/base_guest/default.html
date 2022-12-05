@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{% block 'description' %}{% endblock %}">
+  <meta name="keywords" content="{% block 'keywords' %}{% endblock %}">
+  <title>{% block 'title' %}{% endblock %}</title>
+  {% include 'base_guest/head.html' %}
+</head>
+<body>
+  {% include 'base_guest/header-top.html' %}
+  {% include 'base_guest/header.html' %}
+  {% block 'container' %}{% endblock %}
+  {% include 'base_guest/footer.html' %}
+</body>
+</html>
+
