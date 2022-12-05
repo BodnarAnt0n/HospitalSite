@@ -90,8 +90,7 @@ select {
     line-height: 12px;
 }
 header{
-    height: 120px;
-    background: #EE0000;
+    min-height: 120px;
 }
 
 .logo-text p{
@@ -100,4 +99,20 @@ header{
     line-height: 16px;
     text-transform: uppercase;
     color: #494949;
+}
+
+.header-menu-items{
+    display: flex !important;
+    margin: 1rem !important;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 16px;
+    color: #494949;
+}
+
+.carousel-background-dark{
+    background-color:rgba(0,0,0,.3);
+    background-size: cover;
+    width: 100%;
+    min-height: 550px;
 }
